@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.title {
+  height: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-top: 20px;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+}
+
+#icon {
+  padding-left: 80px;
+  padding-top: 2px;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+.title .engine {
+  font-size: 30px;
+}
+
+.title .engine a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.title .engine {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.title .engine a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.title .engine a.active {
+  background-color: #ddd;
+  color: white;
+}
+
+.title .engine:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.title .engine:active {
+  background-color: #ddd;
+  color: white;
+}
+
+.title input[type=text] {
+  font-size: 30px;
+  border: none;
+  
+}
+
+.title .search-container input {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  padding-left: 42px;
+  right: 100px;
+  background-image:url("../../../img/search.png");
+  background-size: 12%;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+.title .search-container button {
+  padding: 5px 5px;
+  background-color: white;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.title .search-container button:hover {
+  background: #ccc;
+}
+
+.title input[type=text] {
+  border: 1px solid #ccc;
+}
+
+footer {
+  background-color: #bbb;
+  width: 100%;
+  height: 120px;
+}
+
+.socialbuttons {
+  width: 300px;
+  height: 100px;
+  margin-left: 42%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.socialbuttons p {
+  color: #696969;
+  text-align: center;
+}
+
+.fa {
+  padding-top: 17px;
+  font-size: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: solid;
+  margin: 5px 5px;
+  color: white;
+  border: 2px solid #737373;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+.brow {
+  width: 1000px;
+  margin: 0%;
+}
+
+/* 最外框文字跟內容 */
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color: white;
+  padding: 10px;
+  font-size: 19px;
+}
+
+.column .btext {
+  display: inline-block;
+  font-size: 30px;
+  padding-left: 50px;
+  height: 300px;
+
+}
+
+.bcontent img {
+  width: 480px;
+  height: 480px;
+  object-fit: contain;
+}
+
+
+.show {
+  display: block;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+/* 前後按鈕 */
+.container {
+  position: relative;
+}
+
+ 
+ .mySlides0 , .mySlides1{
+    display: none;
+  }
+
+.mySlides0 img, .mySlides1 img,.mySlides2 img,.mySlides3 img,.mySlides4 img,.mySlides5 img,.mySlides6 img,.mySlides7 img{
+  width: 500px;
+  height: 350px;
+  margin-top: 0px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(219, 215, 215, 0.3);
+}
+
+/* 大圖跟小圖中間空格 */
+.caption-container {
+  padding: 2px 16px;
+}
+
+/* 小圖位置 */
+.columnImg {
+
+  margin-left: 3px;
+  float: left;
+  width: 125px;
+}
+
+
+.demo0,.demo1,.demo2,.demo3,.demo4,.demo5,.demo6,.demo7 {
+  opacity: 0.6;
+}
+
+.active,
+.demo0:hover , .demo1:hover {
+  opacity: 1;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#717171;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  transition: .5s .1s;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}

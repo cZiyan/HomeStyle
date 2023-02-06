@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.title {
+    height: 100px;
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+}
+
+#icon {
+    padding-left: 80px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.title .engine {
+    font-size: 30px;
+}
+
+.title .engine a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.title .engine {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.title .engine a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.title .engine a.active {
+    background-color: #ddd;
+    color: white;
+}
+
+.title .engine:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.title .engine:active {
+    background-color: #ddd;
+    color: white;
+}
+
+.title input[type=text] {
+    font-size: 30px;
+    border: none;
+}
+
+.title .search-container input {
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    right: 100px;
+}
+
+.title .search-container button {
+    padding: 5px 5px;
+    background-color: white;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.title .search-container button:hover {
+    background: #ccc;
+}
+
+.title input[type=text] {
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #bbb;
+    width: 100%;
+    height: 120px;
+}
+
+.socialbuttons {
+    width: 300px;
+    height: 100px;
+    margin-left: 42%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.socialbuttons p {
+    color:#696969;
+    text-align: center;
+}
+
+.fa {
+    padding-top: 17px;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: solid;
+    margin: 5px 5px;
+    color: white;
+    border: 2px solid #737373;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.container h1{
+    margin: auto;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 42px;
+    background-color: #ddd;
+    border-radius: 20px;
+    width: 800px;
+}
+
+.step{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 80px 30px 80px;
+}
+
+.step img{
+    width: 100%;
+    padding: 30px;
+}
+
+.step .stepcontent{
+    width: 100%;
+    padding: 0px;
+}
+
+.stepcontent h3{
+    font-size: 30px;
+    background-color: #696969;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+}
+
+.stepcontent p{
+    font-size: 30px;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#717171;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: .5s .1s;
+  }
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+

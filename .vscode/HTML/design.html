@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>風格</title>
+    <script src="https://kit.fontawesome.com/8581172c55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="title">
+        <div id="icon" style="display:inline-block;flex: 1;">
+            <i class="fa-solid fa-house-chimney-window fa-4x"></i>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="homepage" href="./househome.html">Home</a>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="designpage" href="./design.html">Style</a>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="designpage" href="./course.html">自己動手做</a>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="homepage" href="./reserve.html">線上諮詢</a>
+        </div>
+        <div class="search-container" style="display:inline-block;flex: 1;">
+            <input id="insearch" type="search" placeholder="Search..">
+        </div>
+        <!-- <div class="search-container" style="display:inline-block;flex: 1;">
+            <button>
+                <i class="fa-solid fa-magnifying-glass fa-4x"></i>
+            </button>
+        </div> -->
+
+        <hr>
+    </div>
+
+
+    <div class="main">
+        <h1>Home Style</h1>
+        <hr>
+        <h2>Spend your life in your own way. </h2>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all');"> All</button>
+            <button class="btn" onclick="filterSelection('Muji')"> 無印風</button>
+            <button class="btn" onclick="filterSelection('Industrial')"> 工業風</button>
+            <button class="btn" onclick="filterSelection('Japanese')"> 日式風</button>
+            <button class="btn" onclick="filterSelection('Contemporary')"> 現代風</button>
+            <button class="btn" onclick="filterSelection('Wabi-Sabi')"> 侘寂風</button>
+            <button class="btn" onclick="filterSelection('Rustic')"> 鄉村風</button>
+            <button class="btn" onclick="filterSelection('Mix and Match')"> 混搭風</button>
+            <button class="btn" onclick="filterSelection('Scandi')"> 北歐風</button>
+
+        </div>
+        <div id="temp"></div>
+        <div class="row">
+            <div class="column Muji">
+                <div class="content">
+                    <img src="../../img/Muji/05.jpg" alt="Muji" style="width:100%">
+                    <h4>無印風</h4>
+                    <p>Muji Style</p>
+                </div>
+                <div class="bcontent">
+                    <div class="brow">
+                        <div class="column Muji" style="width: 500px;">
+                            <div class="container">
+                                <div class="mySlides0">
+                                    <img src="../../img/Muji/05.jpg" alt="Muji">
+                                </div>
+
+                                <div class="mySlides0">
+                                    <img src="../../img/Muji/13.jpg" alt="Muji">
+                                </div>
+
+                                <div class="mySlides0">
+                                    <img src="../../img/Muji/11.jpg" alt="Muji">
+                                </div>
+
+                                <div class="mySlides0">
+                                    <img src="../../img/Muji/06.jpg" alt="Muji">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+                                <div class="row">
+                                    <div class="columnImg">
+                                        <img class="demo0 cursor" src="../../img/Muji/05.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(1)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo0 cursor" src="../../img/Muji/13.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(2)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo0 cursor" src="../../img/Muji/11.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(3)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo0 cursor" src="../../img/Muji/06.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column Muji">
+                            <div class="btext">
+                                <h4>大面積淺色木質元素</h4>
+                                <p>沒有使用複雜的裝飾，使空間呈現清新、樸實溫暖，並充分利用自然光的引進，
+                                    讓公共區域連結在一起，擁有延伸視覺、放大空間的通透感。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column Industrial">
+                <div class="content">
+                    <img src="../../img/Industrial/29.jpg" alt="Industrial" style="width:100%">
+                    <h4>工業風</h4>
+                    <p>Industrial Style</p>
+                </div>
+
+                <div class="bcontent">
+                    <div class="brow">
+                        <div class="column Industrial" style="width: 500px;">
+                            <div class="container">
+                                <div class="mySlides1">
+                                    <img src="../../img/Industrial/22.jpg" alt="Industrial">
+                                </div>
+                                <div class="mySlides1">
+                                    <img src="../../img/Industrial/23.jpg" alt="Industrial">
+                                </div>
+                                <div class="mySlides1">
+                                    <img src="../../img/Industrial/27.jpg" alt="Industrial">
+                                </div>
+
+                                <div class="mySlides1">
+                                    <img src="../../img/Industrial/25.jpg" alt="Industrial">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+                                <div class="row">
+                                    <div class="columnImg">
+                                        <img class="demo1 cursor" src="../../img/Industrial/22.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(1)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo1 cursor" src="../../img/Industrial/23.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(2)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo1 cursor" src="../../img/Industrial/27.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(3)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo1 cursor" src="../../img/Industrial/25.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column Industrial">
+                            <div class="btext">
+                                <h4>鐵件、磚、水泥、玻璃、金屬面板等物件作為裝飾</h4>
+                                <p>粗曠、原始、異材質拼接、管線裸露，減少隔間、挑高、通透，創造開放式的空間</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column Japanese">
+                <div class="content">
+                    <img src="../../img/Japanese/23_1.jpg" alt="Japanese" style="width:100%">
+                    <h4>日式風</h4>
+                    <p>Japanese Style</p>
+                </div>
+
+                <div class="bcontent">
+                    <div class="brow">
+                        <div class="column Japanese" style="width: 500px;">
+                            <div class="container">
+                                <div class="mySlides2">
+                                    <img src="../../img/Japanese/28.jpg" alt="Japanese">
+                                </div>
+                                <div class="mySlides2">
+                                    <img src="../../img/Japanese/22.jpg" alt="Japanese">
+                                </div>
+                                <div class="mySlides2">
+                                    <img src="../../img/Japanese/27.jpg" alt="Japanese">
+                                </div>
+
+                                <div class="mySlides2">
+                                    <img src="../../img/Japanese/29.jpg" alt="Japanese">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+                                <div class="row">
+                                    <div class="columnImg">
+                                        <img class="demo2 cursor" src="../../img/Japanese/28.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(1)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo2 cursor" src="../../img/Japanese/22.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(2)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo2 cursor" src="../../img/Japanese/27.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(3)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo2 cursor" src="../../img/Japanese/29.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column Japanese">
+                            <div class="btext">
+                                <h4>質樸簡約中的智慧，低調的優雅，隨著歲月而來的美麗與寧靜</h4>
+                                <p>使用天然的建材，溫暖深色實木木質，展現傳統日式和風的室內風格，對稱、秩序、工整、寧靜的氛圍，
+                                    將室內空間與周遭自然光源、景觀作結合，常會使用隔柵、紙門障子、榻榻米等元素。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column Contemporary">
+                <div class="content">
+                    <img src="../../img/Contemporary/14_1.jpg" alt="Contemporary" style="width:100%">
+                    <h4>現代風</h4>
+                    <p>Contemporary Style</p>
+                </div>
+
+                <div class="bcontent">
+                    <div class="brow">
+                        <div class="column Contemporary" style="width: 500px;">
+                            <div class="container">
+                                <div class="mySlides3">
+                                    <img src="../../img/Contemporary/14.jpg" alt="Contemporary">
+                                </div>
+                                <div class="mySlides3">
+                                    <img src="../../img/Contemporary/16.jpg" alt="Contemporary">
+                                </div>
+                                <div class="mySlides3">
+                                    <img src="../../img/Contemporary/17.jpg" alt="Contemporary">
+                                </div>
+
+                                <div class="mySlides3">
+                                    <img src="../../img/Contemporary/15.jpg" alt="Contemporary">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+                                <div class="row">
+                                    <div class="columnImg">
+                                        <img class="demo3 cursor" src="../../img/Contemporary/14.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(1)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo3 cursor" src="../../img/Contemporary/16.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(2)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo3 cursor" src="../../img/Contemporary/17.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(3)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo3 cursor" src="../../img/Contemporary/15.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column Contemporary">
+                            <div class="btext">
+                                <h4>最早追溯到工業革命後期，新的鋼鐵技術與混凝土，支撐建築的整體結構，並垂直向上發展</h4>
+                                <p>簡潔、理性，大片窗戶，清晰開闊的視覺延伸，以黑、灰、白及中性色調為主。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column Wabi-Sabi">
+                <div class="content">
+                    <img src="../../img/Wabi-Sabi/19.jpg" alt="Wabi-Sabi" style="width:100%">
+                    <h4>侘寂風</h4>
+                    <p>Wabi-Sabi Style</p>
+                </div>
+
+                <div class="bcontent">
+                    <div class="brow">
+                        <div class="column Wabi-Sabi" style="width: 500px;">
+                            <div class="container">
+                                <div class="mySlides4">
+                                    <img src="../../img/wabi-sabi/19.jpg" alt="Wabi-Sabi">
+                                </div>
+                                <div class="mySlides4">
+                                    <img src="../../img/wabi-sabi/26.jpg" alt="Wabi-Sabi">
+                                </div>
+                                <div class="mySlides4">
+                                    <img src="../../img/wabi-sabi/17.jpg" alt="Wabi-Sabi">
+                                </div>
+
+                                <div class="mySlides4">
+                                    <img src="../../img/wabi-sabi/18.jpg" alt="Wabi-Sabi">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+                                <div class="row">
+                                    <div class="columnImg">
+                                        <img class="demo4 cursor" src="../../img/wabi-sabi/19.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(1)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo4 cursor" src="../../img/wabi-sabi/26.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(2)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo4 cursor" src="../../img/wabi-sabi/17.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(3)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo4 cursor" src="../../img/wabi-sabi/18.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column Wabi-Sabi">
+                            <div class="btext">
+                                <h4>回歸基礎 簡約、隨意的佈局，呈現不對稱卻包容的美，結合弧度拉起空間的柔美優雅</h4>
+                                <p>自然元素帶入室內、暖色調照明、質樸的地面、牆面，復古家具、手工製品、不完整的藝術。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column Rustic">
+                <div class="content">
+                    <img src="../../img/Rustic/11.jpg" alt="Rustic" style="width:100%">
+                    <h4>鄉村風</h4>
+                    <p>Rustic Style</p>
+                </div>
+
+                <div class="bcontent">
+                    <div class="brow">
+                        <div class="column Rustic" style="width: 500px;">
+                            <div class="container">
+                                <div class="mySlides5">
+                                    <img src="../../img/Rustic/18.jpg" alt="Rustic">
+                                </div>
+                                <div class="mySlides5">
+                                    <img src="../../img/Rustic/15.jpg" alt="Rustic">
+                                </div>
+                                <div class="mySlides5">
+                                    <img src="../../img/Rustic/13.jpeg" alt="Rustic">
+                                </div>
+
+                                <div class="mySlides5">
+                                    <img src="../../img/Rustic/11.jpg" alt="Rustic">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+                                <div class="row">
+                                    <div class="columnImg">
+                                        <img class="demo5 cursor" src="../../img/Rustic/18.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(1)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo5 cursor" src="../../img/Rustic/15.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(2)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo5 cursor" src="../../img/Rustic/13.jpeg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(3)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo5 cursor" src="../../img/Rustic/11.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column Rustic">
+                            <div class="btext">
+                                <h4>歐式鄉村，農村住宅，因地域不同而會有所不同，有英式、法式、義式等，又稱田園風</h4>
+                                <p>有年代感的家具，植物、花卉、蟲、鳥、草木等圖案，花布、良好光線，
+                                    溫馨、懷舊氛圍、壁爐、原木木樑、灰泥壁面，陶磚、石板地面，鑄鐵燈具或燭台燈具。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column Mix and Match">
+                <div class="content">
+                    <img src="../../img/MixandMatch/03.jpg" alt="Mix and Match" style="width:100%">
+                    <h4>混搭風</h4>
+                    <p>Mix and Match Style</p>
+                </div>
+
+
+                <div class="bcontent">
+                    <div class="brow">
+                        <div class="column Mix and Match" style="width: 500px;">
+                            <div class="container">
+                                <div class="mySlides6">
+                                    <img src="../../img/MixandMatch/03.jpg" alt="Mix and Match">
+                                </div>
+                                <div class="mySlides6">
+                                    <img src="../../img/MixandMatch/01.jpg" alt="Mix and Match">
+                                </div>
+                                <div class="mySlides6">
+                                    <img src="../../img/MixandMatch/05.jpg" alt="Mix and Match">
+                                </div>
+
+                                <div class="mySlides6">
+                                    <img src="../../img/MixandMatch/06.jpg" alt="Mix and Match">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+                                <div class="row">
+                                    <div class="columnImg">
+                                        <img class="demo6 cursor" src="../../img/MixandMatch/03.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(1)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo6 cursor" src="../../img/MixandMatch/01.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(2)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo6 cursor" src="../../img/MixandMatch/05.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(3)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo6 cursor" src="../../img/MixandMatch/06.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column Mix and Match">
+                            <div class="btext">
+                                <h4>此風格要搭配得好，必須對設計風格有深入了解才能搭配出具特色、不拘一格的樣式</h4>
+                                <p>不同室內風格的搭配，不同國家文化風格的搭配，選定以家具或裝飾作為混搭的主體。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column Scandi">
+                <div class="content">
+                    <img src="../../img/Scandi/10.jpg" alt="Scandi" style="width:100%">
+                    <h4>北歐風</h4>
+                    <p>Scandi Style</p>
+                </div>
+
+
+                <div class="bcontent">
+                    <div class="brow">
+                        <div class="column Scandi" style="width: 500px;">
+                            <div class="container">
+                                <div class="mySlides7">
+                                    <img src="../../img/Scandi/06.jpg" alt="Scandi">
+                                </div>
+                                <div class="mySlides7">
+                                    <img src="../../img/Scandi/02.jpg" alt="Scandi">
+                                </div>
+                                <div class="mySlides7">
+                                    <img src="../../img/Scandi/07.jpg" alt="Scandi">
+                                </div>
+
+                                <div class="mySlides7">
+                                    <img src="../../img/Scandi/10.jpg" alt="Scandi">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+                                <div class="row">
+                                    <div class="columnImg">
+                                        <img class="demo7 cursor" src="../../img/Scandi/06.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(1)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo7 cursor" src="../../img/Scandi/02.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(2)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo7 cursor" src="../../img/Scandi/07.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(3)">
+                                    </div>
+                                    <div class="columnImg">
+                                        <img class="demo7 cursor" src="../../img/Scandi/10.jpg"
+                                            style="width: 100%; height: 100%;" onclick="currentSlide(4)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column Scandi">
+                            <div class="btext">
+                                <h4>一種工業及工藝技術整合的簡約風格，也傾向於使用鮮豔的色塊來營造溫暖感</h4>
+                                <p>又可分為偏極簡或是偏鄉村，實用、乾淨、簡約、幾何、色塊，常會使用淺色為基調色，以鮮豔明亮的跳色物件做裝飾，木質元素為重點。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="socialbuttons ">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <p>2022 小專</p>
+        </div>
+    </footer>
+
+
+    <script>
+        //點All能顯現全部
+        BcontentDisplayNone();
+        filterSelection("all");
+
+        function filterSelection(c) {
+            var x = document.getElementsByClassName("column");
+            if (c === "all") {
+                $('#temp').val('all');
+                c = "";
+                $('.column').width('33.33%');
+            }
+            else {
+                $('#temp').val('');
+                $('.column').width('50%');
+            }
+            for (var i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+
+        }
+
+        function BcontentDisplayNone() {
+            var bcontents = document.getElementsByClassName("bcontent");
+            for (var i = 0; i < bcontents.length; i++) {
+                bcontents[i].style.display = "none";
+            }
+        }
+
+        //在主頁增加風格頁
+        function AddClass(element, name) {
+            var arr1 = element.className.split(" ");
+            var arr2 = name.split(" ");
+            for (var i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        //在主頁減少風格頁
+        function RemoveClass(element, name) {
+            var arr1 = element.className.split(" ");
+            var arr2 = name.split(" ");
+            for (var i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // 點這個button切換這個頁面
+        $(".btn").on("click", function () {
+            //點All按鈕時 acontent顯示 bcontent隱藏
+            var acontent = $('.content').get();
+            for (var i = 0; i < acontent.length; i++) {
+                $('.content').get(i).style.display = 'none';
+                $(".bcontent").get(i).style.display = "block";
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            }
+
+            if ($('#temp').val() == 'all') {
+                BcontentDisplayNone();
+                for (var i = 0; i < acontent.length; i++) {
+                    $('.content').get(i).style.display = 'block';
+                }
+
+                var acolumn = $('.column').get();
+                for (var i = 0; i < acolumn.length; i++) {
+                    $('.column').get(i).style.width = '33.33%';
+                }
+            }
+        });
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            for (var j = 0; j < 8; j++) {
+
+                let slides = document.getElementsByClassName("mySlides" + j);
+                let dots = document.getElementsByClassName("demo" + j);
+
+                if (n > 4) { slideIndex = 1 }
+                if (n < 1) { slideIndex = 4 }
+
+                for (i = 0; i < 4; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < 4; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        }
+
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+        function AcontentDisplayNone() {
+            var acontents = document.getElementsByClassName("content");
+
+            for (var i = 0; i < acontents.length; i++) {
+                acontents[i].style.display = "none";
+            }
+
+
+        }
+
+        // var mycolumn = $(".column").get();
+        // var mycontent = $(".content").get();
+        // $("input").keyup(function () {
+        //     var usersearch = $("input").val();
+        //     if (usersearch != "") {
+        //         AcontentDisplayNone();
+        //         for (var i = 0; i < mycontent.length; i++) {
+        //             if (usersearch.indexOf(mycolumn)) {
+        //                 mycolumn[i].style.display = "block";
+        //             }
+
+        //         }
+
+        //     } else  {
+
+        //     }
+
+        // })
+
+
+
+
+    </script>
+
+</body>
+
+</html>

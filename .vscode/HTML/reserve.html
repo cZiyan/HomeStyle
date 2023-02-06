@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>線上諮詢</title>
+    <script src="https://kit.fontawesome.com/8581172c55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/reserve.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery.js"></script>
+
+</head>
+
+<body>
+    <div class="title">
+        <div id="icon" style="display:inline-block;flex: 1;">
+            <i class="fa-solid fa-house-chimney-window fa-4x"></i>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="homepage" href="./househome.html">Home</a>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="designpage" href="./design.html">Style</a>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="designpage" href="./course.html">自己動手做</a>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="homepage" href="./reserve.html">線上諮詢</a>
+        </div>
+        <!-- <div class="search-container" style="display:inline-block;flex: 2;">
+            <input id="inserch" type="search" placeholder="Search..">
+        </div>
+        <div class="search-container" style="display:inline-block;flex: 1;">
+            <button>
+                <i class="fa-solid fa-magnifying-glass fa-4x"></i>
+            </button>
+        </div> -->
+
+        <hr>
+    </div>
+
+    <form class="register">
+        <h2>諮詢表單提交後，將有專人盡速與您電話聯繫，感謝您的耐心等候！</h2>
+        <div class="tab">
+            <label for="myname" class="tabtitle">聯絡人姓名<span class="redfont">*</span> : </label>
+            <input type="text" id="myname" placeholder="陳小姐" name="name" required>
+        </div>
+        <div class="tab">
+            <label for="myphone" class="tabtitle">聯絡人電話<span class="redfont">*</span> : </label>
+            <input type="tel" id="myphone" placeholder="09xx-xxx-xxx 或02-xxxx-xxxx" pattern="09\d{2}-\d{6}" name="phone"
+                maxlength="10" required>
+        </div>
+        <div class="tab">
+            <label for="myemail" class="tabtitle">聯絡人信箱<span class="redfont">*</span> : </label>
+            <input type="email" id="myemail" placeholder="abcd123@gmail.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" required>
+        </div>
+        <div class="tab">
+            <label for="myrange" class="tabtitle">改造預算<span class="redfont">*</span> : </label>
+            <input id="myrange" type="text" list="rangelist" placeholder="請選擇" required>
+            <datalist id="rangelist">
+                <option>1~10萬</option>
+                <option>10萬~50萬</option>
+                <option>50萬~100萬</option>
+                <option>100萬以上</option>
+            </datalist>
+        </div>
+        <div class="tab">
+            <label for="myping" class="tabtitle">改造坪數<span class="redfont">*</span> : </label>
+            <input type="text" id="myping" placeholder="實際坪數(不含公設)" name="ping" required>
+        </div>
+        <div class="tab">
+            <label for="mytype" class="tabtitle">改造空間<span class="redfont">*</span> : </label>
+            <input id="mytype" type="text" list="typelist" placeholder="請選擇" required>
+            <datalist id="typelist">
+                <option>客廳</option>
+                <option>臥室</option>
+                <option>廚房</option>
+                <option>浴室</option>
+                <option>陽台</option>
+            </datalist>
+        </div>
+        <div class="tab">
+            <label for="mytime" class="tabtitle">連絡時段<span class="redfont">*</span>: </label>
+            <input id="mytime" type="text" list="timelist" placeholder="請選擇" required>
+            <datalist id="timelist">
+                <option>上午09:00 - 12:00</option>
+                <option>中午12:00 - 13:30</option>
+                <option>下午13:30 - 18:00</option>
+                <option>晚上18:00 - 21:00</option>
+            </datalist>
+        </div>
+        <div class="tab">
+            <span class="tabtitle">居住成員:</span>
+            <input name="member" id="person" type="radio" value="person">
+            <label for="person">個人</label>
+            <input name="member" id="double" type="radio" value="double">
+            <label for="double">雙人</label>
+            <input name="member" id="couple" type="radio" value="couple">
+            <label for="couple">夫妻</label>
+            <input name="member" id="child" type="radio" value="child">
+            <label for="child">子女</label><br>
+            <input name="member" id="elder" type="radio" value="elder">
+            <label for="elder">長輩</label>
+            <input name="member" id="other" type="radio" value="other">
+            <label for="other">其他</label>
+        </div>
+        <div class="tab">
+            <label for="myremark" class="tabtitle">備註欄 : </label>
+            <textarea id="myremark" name="remark" placeholder="如果有其他訊息，歡迎留言!" style="height:200px"></textarea>
+        </div>
+        <div class="tab" style="overflow:auto;">
+            <div>
+                <button type="submit" id="sendBtn">送出</button>
+            </div>
+
+        </div>
+
+    </form>
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>送出成功</p>
+        </div>
+    </div>
+
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+
+
+    <footer>
+        <div class="socialbuttons ">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <p>2022 小專</p>
+        </div>
+    </footer>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("sendBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        var myform = document.getElementsByClassName("register");
+        
+
+        btn.onclick = function () {
+            if ($('#myname').val() != "" &&
+                $("#myphone").val() != "" &&
+                $("#myemail").val() != "" &&
+                $("#myrange").val() != "" &&
+                $("#myping").val() != "" &&
+                $("#mytype").val() != "" &&
+                $("#mytime").val() != "") {
+                modal.style.display = "block";
+                $('input').val('');
+                document.getElementById("person").checked = false;
+                document.getElementById("double").checked = false;
+                document.getElementById("couple").checked = false;
+                document.getElementById("child").checked = false;
+                document.getElementById("elder").checked = false;
+                document.getElementById("other").checked = false;
+
+            } else {
+                alert("請填寫欄位!!");
+            }
+        }
+
+        try {
+            if (x == "") throw "empty";
+            if (isNaN(x)) throw "not a number";
+            x = Number(x);
+            if (x < 5) throw "too low";
+            if (x > 10) throw "too high";
+        }
+        catch (err) {
+            message.innerHTML = "Input is " + err;
+        }
+
+
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
