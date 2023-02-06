@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己動手做</title>
+    <script src="https://kit.fontawesome.com/8581172c55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="title">
+        <div id="icon" style="display:inline-block;flex: 1;">
+            <i class="fa-solid fa-house-chimney-window fa-4x"></i>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="homepage" href="./index.html">Home</a>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="designpage" href="./design.html">Style</a>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="designpage" href="./course.html">自己動手做</a>
+        </div>
+        <div class="engine" style="display:inline-block;flex: 2;">
+            <a id="homepage" href="./reserve.html">線上諮詢</a>
+        </div>
+        <!-- <div class="search-container" style="display:inline-block;flex: 2;">
+            <input id="inserch" type="search" placeholder="Search..">
+        </div>
+        <div class="search-container" style="display:inline-block;flex: 1;">
+            <button>
+                <i class="fa-solid fa-magnifying-glass fa-4x"></i>
+            </button>
+        </div> -->
+
+        <hr>
+    </div>
+
+    <div class="container">
+        <h1>打造實用、美感兼具的空間</h1>
+        <div class="step">
+            <img src="../../img/course/01.jpg">
+            <div class="stepcontent">
+                <h3>在進行規劃前要首先做的是：<br>認識你自己</h3>
+                <p>釐清自己的喜好、需求是很重要的環節</p>
+                <p>空間改造，是感性與理性結合的成果</p>
+            </div>
+        </div>
+
+        <div class="step" data-aos="fade-right">
+            <img src="../../img/course/05.png">
+            <div class="stepcontent">
+                <h3>改造前，先思考...</h3>
+                <p>1. 依照衣物、生活必須品的多寡，就可以篩選出合適的家具來收納。</p>
+                <p>2. 在家花最長時間待著的區域，以較高成本投入。</p>
+                <p>3. 飲食習慣 : 有的人天天叫外賣；有的人則是熱愛下廚！對於空間的需求不一樣，就會延伸到家俱的款式。</p>
+            </div>
+        </div>
+
+        <div class="step" data-aos="fade-right">
+            <img src="../../img/course/03.jpg">
+            <div class="stepcontent" data-aos="fade-down-left">
+                <h3>真正吸引你的單品，創造專屬於自己的品味</h3>
+                <p>若挑選高比例的木質家具，就可以看出你真正喜歡的是木質家具。</p>
+                <p>若挑選顏色偏灰色、白色，所以吸引你的是簡單色系的單品。</p>
+
+            </div>
+        </div>
+
+        <div class="step" data-aos="fade-right">
+            <img src="../../img/course/04.jpg">
+            <div class="stepcontent" data-aos="fade-down-left">
+                <h3> 平衡感才是空間的重點</h3>
+                <p> 一個「有質感的空間」跟擺的東西多或少，沒有絕對關係！</p>
+                <p>包括色彩的平衡、材質的平衡、數量的平衡，以及陳設的平衡。</p>
+                <p>彼此之間的襯托是和諧、有主角配角關係的！這是一件很重要的事～</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+
+
+    <footer>
+        <div class="socialbuttons ">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <p>2022 小專</p>
+        </div>
+    </footer>
+
+
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+    </script>
+</body>
+
+</html>
